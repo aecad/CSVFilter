@@ -12,6 +12,8 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+    permissions:
+      contents: write  # 允许创建 Release 和上传附件
     env:
       OUTPUT_FILE_PREFIX: CSVFilter.Setup
 
